@@ -7,7 +7,7 @@ export const Traslados = () => {
     const [solicitudes,setSolicitudes] = useState([]);
 
     useEffect(()=>{
-        axios.get("https://backcamilleros-production.up.railway.app/requests")
+        axios.get("https://soy-jugaso.up.railway.app/requests")
             .then((res)=>{
                 setSolicitudes(res.data.filter(filterRequests))
             }).catch((error)=>{
